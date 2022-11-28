@@ -10,9 +10,11 @@ const Counter = () => {
     });
     let incrHandler = () => {
         setProduct({...product, qty: product.qty + 1})
+        console.log("qty added")
     }
     let decrHandler = () => {
         setProduct({...product, qty: product.qty - 1})
+        console.log("qty subtracted")
     }
   return (
     <div>
